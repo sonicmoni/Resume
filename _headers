@@ -1,0 +1,10 @@
+# Netlify response headers (read for drag-and-drop, CLI and Git deploys alike)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# images and the résumé: cache a day, so a new résumé PDF shows up by tomorrow at the latest
+/assets/*
+  Cache-Control: public, max-age=86400
