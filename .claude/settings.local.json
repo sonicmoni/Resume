@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "Bash(git check-ignore *)",
+      "Read(//Users/monica.mohabansi/**)",
+      "Read(//Users/monica.mohabansi/Library/Preferences/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -sI https://monicamohabansi.com/)",
+      "Bash(netlify status *)",
+      "Bash(curl -s https://monicamohabansi.com/ -o /tmp/live.html)",
+      "Bash(md5 -q /tmp/live.html index.html \"index copy.html\")",
+      "Bash(chmod +x deploy.sh)",
+      "Bash(bash -n deploy.sh)",
+      "Bash(./deploy.sh)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(chmod 600 .deploy.env)",
+      "Bash(cp -p /tmp/index.backup.html index.html)",
+      "Bash(md5 -q index.html)",
+      "Bash(echo \"restored md5: $\\(md5 -q index.html\\)  expected: 5d03e615bf2a1b3a3e8e2f10a4021ca1\")",
+      "Bash(md5 -q /tmp/live.html)",
+      "Bash(/usr/bin/env bash *)",
+      "Bash(dig +short monicamohabansi.com)",
+      "Bash(dig +short ftp.monicamohabansi.com)",
+      "Bash(dig +short -x 88.223.85.13)",
+      "Bash(timeout 15 openssl s_client -starttls ftp -connect 88.223.85.13:21)",
+      "Bash(openssl x509 *)",
+      "Bash(openssl s_client -starttls ftp -connect ftp.monicamohabansi.com:21 -servername ftp.monicamohabansi.com)",
+      "Bash(openssl s_client -starttls ftp -connect 88.223.85.13:21)",
+      "Bash(sftp -P 65002 -o BatchMode=no -o StrictHostKeyChecking=accept-new -o NumberOfPasswordPrompts=0 -o ConnectTimeout=8 -b /tmp/probe.b u876514203@88.223.85.13)"
+    ]
+  }
+}
